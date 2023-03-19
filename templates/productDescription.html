@@ -1,0 +1,70 @@
+{% extends './base.html' %} {% block title%} {{ results6['menu1'] }} {% endblock %} {% block body %}
+
+<link rel="stylesheet" href={{url_for( 'static', filename='css/productDescription.css' )}} />
+<link rel="stylesheet" href={{ url_for( 'static', filename='css/topStyle.css' )}} />
+<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+
+<style>
+    /* Keyword value/name of color */
+    
+    .div-1 {
+        background-color: rgb(237, 169, 61);
+    }
+    /* Hexadecimal value */
+    
+    .div-2 {
+        background-color: #FF0000;
+    }
+    /* RGB value */
+    
+    .div-3 {
+        background-color: rgb(255, 0, 0);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="div-1 text-center">
+
+            <div id="display">
+                <div id="productName">
+                    <h1>{{data[1]}}</h1>
+                </div>
+
+                <div id="productDescription">
+                    <h2>{{ results6['detalles'] }}</h2>
+                    <table id="descriptionTable">
+                        <tr>
+                            <th>{{ results6['promo'] }}</th>
+                            <th>{{ results6['nombre'] }}</th>
+                            <th>{{ results6['precio'] }}</th>
+                            <th>{{ results6['descripcion2'] }}</th>
+                        </tr>
+
+                        <tr>
+                            <th>
+                                <img src={{url_for( 'static', filename='img/' +data[3]) }} width="300" height="270" id="itemImage" />
+                            </th>
+                            <td>{{data[1]}}</td>
+                            <td>${{data[4]}}</td>
+                            <td>{{data[2]}}</td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <div id="addToCart">
+                    <a href="/addToCart?idpro={{request.args.get('idpro')}}" class=" btn btn-dark " role="button ">{{ results6['agregar1'] }}</a>
+                </div>
+                <br>
+                <div>
+                    <a href="/menu " class="btn btn-success " role="button " data-bs-toggle="button "> {{ results6['ir'] }}</a>
+                    <a href="/ofertas " class="btn btn-success " role="button " data-bs-toggle="button "> {{ results6['ir1'] }}</a>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+{% endblock %}

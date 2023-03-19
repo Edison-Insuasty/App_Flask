@@ -1,0 +1,869 @@
+# Translations template for PROJECT.
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-03-16 22:37-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: index.py:351
+msgid "Error"
+msgstr ""
+
+#: index.py:352
+msgid "Solicitud incorrecta"
+msgstr ""
+
+#: index.py:353
+msgid "REGRESAR"
+msgstr ""
+
+#: adminblu/routes.py:416 carrito/routes.py:275 carrito/routes.py:328
+#: catalogo/routes.py:80 contacto/routes.py:55 descripcion/routes.py:67
+#: index.py:364 index.py:596 ofertas/routes.py:86 traduccion.py:561
+msgid "INICIO"
+msgstr ""
+
+#: index.py:365 index.py:597
+msgid "QUIENES SOMOS"
+msgstr ""
+
+#: index.py:366 index.py:598
+msgid ""
+"PARRILLA IPIALEÑA: Somos una empresa comprometidos con garantizar "
+"satisfacción a nuestros clientes, nuestros productos se caracterizan por "
+"contar con alta calidad y eficiencia en la prestación del servicio"
+msgstr ""
+
+#: index.py:367 index.py:599
+msgid "COCINERO"
+msgstr ""
+
+#: index.py:368 index.py:600
+msgid ""
+"Un cocinero no puede, él sólo, gobernar su reino. Está necesitado de "
+"colaboradores que entiendan lo que se propone, cuál es su visión del "
+"mundo. Es con todos ellos, con su energía, saber hacer y esmero, como el "
+"proyecto deja de serlo para concentrarse en la realidad"
+msgstr ""
+
+#: index.py:369 index.py:601
+msgid "DA LO MEJOR DE TI"
+msgstr ""
+
+#: index.py:370 index.py:602
+msgid ""
+"El cocinero no es una persona aislada, que vive y trabaja sólo para dar "
+"de comer a sus huéspedes. Un cocinero se convierte en artista cuando "
+"tiene cosas que decir a través de sus platos, como un pintor en un cuadro"
+msgstr ""
+
+#: adminblu/routes.py:262 adminblu/routes.py:321 adminblu/routes.py:427
+#: adminblu/routes.py:445 adminblu/routes.py:509 adminblu/routes.py:572
+#: adminblu/routes.py:647 adminblu/routes.py:675 carrito/routes.py:280
+#: carrito/routes.py:333 catalogo/routes.py:79 contacto/routes.py:60
+#: descripcion/routes.py:72 index.py:375 index.py:616 ofertas/routes.py:91
+#: traduccion.py:407 traduccion.py:466 traduccion.py:572 traduccion.py:590
+#: traduccion.py:654 traduccion.py:717 traduccion.py:792 traduccion.py:820
+msgid "SALIR"
+msgstr ""
+
+#: adminblu/routes.py:263 adminblu/routes.py:322 adminblu/routes.py:446
+#: adminblu/routes.py:510 adminblu/routes.py:573 adminblu/routes.py:648
+#: adminblu/routes.py:676 index.py:376 traduccion.py:408 traduccion.py:467
+#: traduccion.py:591 traduccion.py:655 traduccion.py:718 traduccion.py:793
+#: traduccion.py:821
+msgid "GESTION DE PRODUCTOS"
+msgstr ""
+
+#: adminblu/routes.py:264 adminblu/routes.py:323 adminblu/routes.py:447
+#: adminblu/routes.py:511 adminblu/routes.py:574 adminblu/routes.py:649
+#: adminblu/routes.py:677 index.py:377 traduccion.py:409 traduccion.py:468
+#: traduccion.py:592 traduccion.py:656 traduccion.py:719 traduccion.py:794
+#: traduccion.py:822
+msgid "AGREGAR NUEVO PRODUCTO A LA PARRILLA"
+msgstr ""
+
+#: adminblu/routes.py:421 carrito/routes.py:281 carrito/routes.py:334
+#: catalogo/routes.py:78 contacto/routes.py:61 descripcion/routes.py:73
+#: index.py:381 index.py:486 index.py:547 index.py:568 index.py:617
+#: index.py:653 ofertas/routes.py:92 traduccion.py:566
+msgid "Dirección"
+msgstr ""
+
+#: adminblu/routes.py:403 adminblu/routes.py:417 carrito/routes.py:276
+#: carrito/routes.py:329 catalogo/routes.py:81 contacto/routes.py:56
+#: descripcion/routes.py:68 index.py:382 index.py:607 ofertas/routes.py:87
+#: traduccion.py:548 traduccion.py:562
+msgid "MENU"
+msgstr ""
+
+#: adminblu/routes.py:277 adminblu/routes.py:336 adminblu/routes.py:418
+#: adminblu/routes.py:460 adminblu/routes.py:524 adminblu/routes.py:587
+#: adminblu/routes.py:690 carrito/routes.py:277 carrito/routes.py:330
+#: catalogo/routes.py:82 contacto/routes.py:57 descripcion/routes.py:69
+#: index.py:383 index.py:608 ofertas/routes.py:88 traduccion.py:422
+#: traduccion.py:481 traduccion.py:563 traduccion.py:605 traduccion.py:669
+#: traduccion.py:732 traduccion.py:835
+msgid "DESCRIPCIÓN"
+msgstr ""
+
+#: adminblu/routes.py:419 carrito/routes.py:278 carrito/routes.py:331
+#: catalogo/routes.py:83 contacto/routes.py:58 descripcion/routes.py:70
+#: index.py:384 index.py:609 ofertas/routes.py:89 traduccion.py:564
+msgid "PROMOCIONES"
+msgstr ""
+
+#: adminblu/routes.py:420 carrito/routes.py:279 carrito/routes.py:332
+#: catalogo/routes.py:84 contacto/routes.py:59 descripcion/routes.py:71
+#: index.py:385 index.py:610 ofertas/routes.py:90 traduccion.py:565
+msgid "CONTACTO"
+msgstr ""
+
+#: adminblu/routes.py:422 carrito/routes.py:282 carrito/routes.py:335
+#: catalogo/routes.py:85 contacto/routes.py:62 descripcion/routes.py:74
+#: index.py:386 index.py:487 index.py:548 index.py:576 index.py:611
+#: index.py:654 ofertas/routes.py:93 traduccion.py:567
+msgid "CARRERA"
+msgstr ""
+
+#: adminblu/routes.py:423 carrito/routes.py:283 carrito/routes.py:336
+#: catalogo/routes.py:86 contacto/routes.py:63 descripcion/routes.py:75
+#: index.py:387 index.py:488 index.py:549 index.py:577 index.py:612
+#: index.py:655 ofertas/routes.py:94 traduccion.py:568
+msgid "BARRIO SANTIAGO - IPIALES"
+msgstr ""
+
+#: adminblu/routes.py:424 carrito/routes.py:284 carrito/routes.py:337
+#: catalogo/routes.py:87 contacto/routes.py:64 descripcion/routes.py:76
+#: index.py:388 index.py:489 index.py:550 index.py:578 index.py:613
+#: index.py:656 ofertas/routes.py:95 traduccion.py:569
+msgid "Nuestras Redes"
+msgstr ""
+
+#: adminblu/routes.py:425 carrito/routes.py:285 carrito/routes.py:338
+#: catalogo/routes.py:88 contacto/routes.py:65 descripcion/routes.py:77
+#: index.py:389 index.py:490 index.py:551 index.py:579 index.py:614
+#: index.py:657 ofertas/routes.py:96 traduccion.py:570
+msgid "PARRILA IPIALEÑA"
+msgstr ""
+
+#: adminblu/routes.py:426 carrito/routes.py:286 carrito/routes.py:339
+#: catalogo/routes.py:89 contacto/routes.py:66 descripcion/routes.py:78
+#: index.py:390 index.py:491 index.py:552 index.py:580 index.py:615
+#: index.py:658 ofertas/routes.py:97 traduccion.py:571
+msgid ""
+"Tenemos mas de 10 años de experciencia en la elaboración de nuestros "
+"productos, danos el gusto de atenderte"
+msgstr ""
+
+#: adminblu/routes.py:268 adminblu/routes.py:327 adminblu/routes.py:451
+#: adminblu/routes.py:515 adminblu/routes.py:578 adminblu/routes.py:653
+#: adminblu/routes.py:681 index.py:396 traduccion.py:413 traduccion.py:472
+#: traduccion.py:596 traduccion.py:660 traduccion.py:723 traduccion.py:798
+#: traduccion.py:826
+msgid "Felicitaciones"
+msgstr ""
+
+#: adminblu/routes.py:269 adminblu/routes.py:328 adminblu/routes.py:452
+#: adminblu/routes.py:516 adminblu/routes.py:579 adminblu/routes.py:654
+#: adminblu/routes.py:682 index.py:397 traduccion.py:414 traduccion.py:473
+#: traduccion.py:597 traduccion.py:661 traduccion.py:724 traduccion.py:799
+#: traduccion.py:827
+msgid "EXCELENTE"
+msgstr ""
+
+#: adminblu/routes.py:273 adminblu/routes.py:332 adminblu/routes.py:456
+#: adminblu/routes.py:520 adminblu/routes.py:583 adminblu/routes.py:661
+#: adminblu/routes.py:686 index.py:401 traduccion.py:418 traduccion.py:477
+#: traduccion.py:601 traduccion.py:665 traduccion.py:728 traduccion.py:806
+#: traduccion.py:831
+msgid "Registrar Carro"
+msgstr ""
+
+#: adminblu/routes.py:274 adminblu/routes.py:333 adminblu/routes.py:457
+#: adminblu/routes.py:521 adminblu/routes.py:584 adminblu/routes.py:687
+#: index.py:402 traduccion.py:419 traduccion.py:478 traduccion.py:602
+#: traduccion.py:666 traduccion.py:729 traduccion.py:832
+msgid "DETALLES DEL PRODUCTO"
+msgstr ""
+
+#: adminblu/routes.py:275 adminblu/routes.py:334 adminblu/routes.py:458
+#: adminblu/routes.py:522 adminblu/routes.py:585 adminblu/routes.py:688
+#: index.py:403 traduccion.py:420 traduccion.py:479 traduccion.py:603
+#: traduccion.py:667 traduccion.py:730 traduccion.py:833
+msgid "DE LA PARRILLA IPIALEÑA"
+msgstr ""
+
+#: adminblu/routes.py:276 adminblu/routes.py:335 adminblu/routes.py:459
+#: adminblu/routes.py:523 adminblu/routes.py:586 adminblu/routes.py:689
+#: index.py:404 traduccion.py:421 traduccion.py:480 traduccion.py:604
+#: traduccion.py:668 traduccion.py:731 traduccion.py:834
+msgid "NOMBRE"
+msgstr ""
+
+#: adminblu/routes.py:278 adminblu/routes.py:337 adminblu/routes.py:461
+#: adminblu/routes.py:525 adminblu/routes.py:588 adminblu/routes.py:691
+#: index.py:405 traduccion.py:423 traduccion.py:482 traduccion.py:606
+#: traduccion.py:670 traduccion.py:733 traduccion.py:836
+msgid "FOTO"
+msgstr ""
+
+#: adminblu/routes.py:279 adminblu/routes.py:338 adminblu/routes.py:462
+#: adminblu/routes.py:526 adminblu/routes.py:589 adminblu/routes.py:664
+#: adminblu/routes.py:692 index.py:406 traduccion.py:424 traduccion.py:483
+#: traduccion.py:607 traduccion.py:671 traduccion.py:734 traduccion.py:809
+#: traduccion.py:837
+msgid "PRECIO"
+msgstr ""
+
+#: adminblu/routes.py:280 adminblu/routes.py:339 adminblu/routes.py:463
+#: adminblu/routes.py:527 adminblu/routes.py:590 adminblu/routes.py:693
+#: index.py:407 traduccion.py:425 traduccion.py:484 traduccion.py:608
+#: traduccion.py:672 traduccion.py:735 traduccion.py:838
+msgid "No existe el carrito"
+msgstr ""
+
+#: adminblu/routes.py:285 adminblu/routes.py:344 adminblu/routes.py:468
+#: adminblu/routes.py:532 adminblu/routes.py:595 adminblu/routes.py:698
+#: index.py:412 traduccion.py:430 traduccion.py:489 traduccion.py:613
+#: traduccion.py:677 traduccion.py:740 traduccion.py:843
+msgid "Actualizar Información del Carro"
+msgstr ""
+
+#: adminblu/routes.py:289 adminblu/routes.py:348 adminblu/routes.py:472
+#: adminblu/routes.py:536 adminblu/routes.py:599 adminblu/routes.py:702
+#: index.py:413 traduccion.py:434 traduccion.py:493 traduccion.py:617
+#: traduccion.py:681 traduccion.py:744 traduccion.py:847
+msgid "Cambiar Foto del producto"
+msgstr ""
+
+#: adminblu/routes.py:290 adminblu/routes.py:349 adminblu/routes.py:473
+#: adminblu/routes.py:537 adminblu/routes.py:600 adminblu/routes.py:703
+#: index.py:414 traduccion.py:435 traduccion.py:494 traduccion.py:618
+#: traduccion.py:682 traduccion.py:745 traduccion.py:848
+msgid "Guardar Actualización"
+msgstr ""
+
+#: adminblu/routes.py:291 adminblu/routes.py:350 adminblu/routes.py:474
+#: adminblu/routes.py:538 adminblu/routes.py:601 adminblu/routes.py:704
+#: index.py:415 traduccion.py:436 traduccion.py:495 traduccion.py:619
+#: traduccion.py:683 traduccion.py:746 traduccion.py:849
+msgid "No existe el Coche"
+msgstr ""
+
+#: adminblu/routes.py:286 adminblu/routes.py:345 adminblu/routes.py:409
+#: adminblu/routes.py:469 adminblu/routes.py:533 adminblu/routes.py:596
+#: adminblu/routes.py:662 adminblu/routes.py:699 catalogo/routes.py:97
+#: descripcion/routes.py:86 index.py:416 ofertas/routes.py:106
+#: traduccion.py:431 traduccion.py:490 traduccion.py:554 traduccion.py:614
+#: traduccion.py:678 traduccion.py:741 traduccion.py:807 traduccion.py:844
+msgid "Nombre"
+msgstr ""
+
+#: adminblu/routes.py:288 adminblu/routes.py:347 adminblu/routes.py:411
+#: adminblu/routes.py:471 adminblu/routes.py:535 adminblu/routes.py:598
+#: adminblu/routes.py:701 catalogo/routes.py:98 index.py:417
+#: ofertas/routes.py:107 traduccion.py:433 traduccion.py:492 traduccion.py:556
+#: traduccion.py:616 traduccion.py:680 traduccion.py:743 traduccion.py:846
+msgid "Precio"
+msgstr ""
+
+#: adminblu/routes.py:287 adminblu/routes.py:346 adminblu/routes.py:410
+#: adminblu/routes.py:470 adminblu/routes.py:534 adminblu/routes.py:597
+#: adminblu/routes.py:663 adminblu/routes.py:700 carrito/routes.py:348
+#: catalogo/routes.py:99 index.py:418 ofertas/routes.py:108 traduccion.py:432
+#: traduccion.py:491 traduccion.py:555 traduccion.py:615 traduccion.py:679
+#: traduccion.py:742 traduccion.py:808 traduccion.py:845
+msgid "Descripción"
+msgstr ""
+
+#: adminblu/routes.py:296 adminblu/routes.py:355 adminblu/routes.py:479
+#: adminblu/routes.py:543 adminblu/routes.py:606 adminblu/routes.py:709
+#: index.py:423 traduccion.py:441 traduccion.py:500 traduccion.py:624
+#: traduccion.py:688 traduccion.py:751 traduccion.py:854
+msgid "Foto"
+msgstr ""
+
+#: adminblu/routes.py:297 adminblu/routes.py:356 adminblu/routes.py:480
+#: adminblu/routes.py:544 adminblu/routes.py:607 adminblu/routes.py:710
+#: index.py:424 traduccion.py:442 traduccion.py:501 traduccion.py:625
+#: traduccion.py:689 traduccion.py:752 traduccion.py:855
+msgid "ACCIONES"
+msgstr ""
+
+#: adminblu/routes.py:298 adminblu/routes.py:357 adminblu/routes.py:481
+#: adminblu/routes.py:545 adminblu/routes.py:608 adminblu/routes.py:711
+#: index.py:425 traduccion.py:443 traduccion.py:502 traduccion.py:626
+#: traduccion.py:690 traduccion.py:753 traduccion.py:856
+msgid "Ver"
+msgstr ""
+
+#: adminblu/routes.py:299 adminblu/routes.py:358 adminblu/routes.py:482
+#: adminblu/routes.py:546 adminblu/routes.py:609 adminblu/routes.py:712
+#: index.py:426 traduccion.py:444 traduccion.py:503 traduccion.py:627
+#: traduccion.py:691 traduccion.py:754 traduccion.py:857
+msgid "Actualizar"
+msgstr ""
+
+#: adminblu/routes.py:301 adminblu/routes.py:360 adminblu/routes.py:484
+#: adminblu/routes.py:548 adminblu/routes.py:611 adminblu/routes.py:714
+#: index.py:427 traduccion.py:446 traduccion.py:505 traduccion.py:629
+#: traduccion.py:693 traduccion.py:756 traduccion.py:859
+msgid "NO HAY MAS ELEMENTOS"
+msgstr ""
+
+#: adminblu/routes.py:300 adminblu/routes.py:359 adminblu/routes.py:483
+#: adminblu/routes.py:547 adminblu/routes.py:610 adminblu/routes.py:713
+#: carrito/routes.py:298 index.py:428 traduccion.py:445 traduccion.py:504
+#: traduccion.py:628 traduccion.py:692 traduccion.py:755 traduccion.py:858
+msgid "Descartar"
+msgstr ""
+
+#: adminblu/routes.py:306 adminblu/routes.py:365 adminblu/routes.py:489
+#: adminblu/routes.py:553 adminblu/routes.py:616 adminblu/routes.py:658
+#: adminblu/routes.py:719 index.py:433 traduccion.py:451 traduccion.py:510
+#: traduccion.py:634 traduccion.py:698 traduccion.py:761 traduccion.py:803
+#: traduccion.py:864
+msgid "Registrar Nuevo Producto"
+msgstr ""
+
+#: adminblu/routes.py:307 adminblu/routes.py:366 adminblu/routes.py:490
+#: adminblu/routes.py:554 adminblu/routes.py:617 adminblu/routes.py:659
+#: adminblu/routes.py:720 index.py:434 traduccion.py:452 traduccion.py:511
+#: traduccion.py:635 traduccion.py:699 traduccion.py:762 traduccion.py:804
+#: traduccion.py:865
+msgid "Foto del Producto"
+msgstr ""
+
+#: adminblu/routes.py:308 adminblu/routes.py:367 adminblu/routes.py:491
+#: adminblu/routes.py:555 adminblu/routes.py:618 adminblu/routes.py:660
+#: adminblu/routes.py:721 index.py:435 traduccion.py:453 traduccion.py:512
+#: traduccion.py:636 traduccion.py:700 traduccion.py:763 traduccion.py:805
+#: traduccion.py:866
+msgid "Guardar Registro"
+msgstr ""
+
+#: index.py:482 index.py:543 index.py:573 index.py:623 index.py:649
+msgid "Cedula"
+msgstr ""
+
+#: index.py:483 index.py:544 index.py:574 index.py:624 index.py:650
+msgid "Contraseña"
+msgstr ""
+
+#: index.py:484 index.py:545 index.py:625 index.py:651
+msgid "Iniciar Sesión"
+msgstr ""
+
+#: index.py:485 index.py:546 index.py:575 index.py:626 index.py:652
+msgid "Registrar"
+msgstr ""
+
+#: index.py:564
+msgid "Registro"
+msgstr ""
+
+#: index.py:565
+msgid "Nombres"
+msgstr ""
+
+#: index.py:566
+msgid "Apellidos"
+msgstr ""
+
+#: contacto/routes.py:72 index.py:567
+msgid "Correo"
+msgstr ""
+
+#: contacto/routes.py:73 index.py:569
+msgid "Teléfono"
+msgstr ""
+
+#: index.py:570
+msgid "Confirme Contraseña"
+msgstr ""
+
+#: index.py:571
+msgid "Credencial"
+msgstr ""
+
+#: index.py:572
+msgid "Volver"
+msgstr ""
+
+#: adminblu/routes.py:404 catalogo/routes.py:95 ofertas/routes.py:104
+#: traduccion.py:549
+msgid "DETALLES"
+msgstr ""
+
+#: adminblu/routes.py:405 catalogo/routes.py:96 ofertas/routes.py:105
+#: traduccion.py:550
+msgid "Promo"
+msgstr ""
+
+#: adminblu/routes.py:406 catalogo/routes.py:100 ofertas/routes.py:109
+#: traduccion.py:551
+msgid "AGREGAR AL CARRO"
+msgstr ""
+
+#: adminblu/routes.py:407 catalogo/routes.py:101 traduccion.py:552
+msgid "IR A MENU"
+msgstr ""
+
+#: adminblu/routes.py:408 catalogo/routes.py:102 traduccion.py:553
+msgid "IR A PROMOCIÓNES"
+msgstr ""
+
+#: carrito/routes.py:292
+msgid "CARRITO"
+msgstr ""
+
+#: carrito/routes.py:293
+msgid "CARRITO DE COMPRAS"
+msgstr ""
+
+#: carrito/routes.py:294
+msgid "IMAGEN"
+msgstr ""
+
+#: carrito/routes.py:295
+msgid "CANTIDAD"
+msgstr ""
+
+#: carrito/routes.py:296
+msgid "VALOR UNITARIO"
+msgstr ""
+
+#: carrito/routes.py:297
+msgid "VALOR TOTAL"
+msgstr ""
+
+#: carrito/routes.py:299
+msgid "Subtotal"
+msgstr ""
+
+#: carrito/routes.py:300
+msgid "PAGAR"
+msgstr ""
+
+#: carrito/routes.py:301
+msgid "VACIAR CARRITO"
+msgstr ""
+
+#: carrito/routes.py:302
+msgid "SEGUIR COMPRANDO"
+msgstr ""
+
+#: carrito/routes.py:345
+msgid "PAGO"
+msgstr ""
+
+#: carrito/routes.py:346
+msgid "FACTURA DE COMPRA"
+msgstr ""
+
+#: carrito/routes.py:347
+msgid "Cantidad"
+msgstr ""
+
+#: carrito/routes.py:349
+msgid "Precio Unitario"
+msgstr ""
+
+#: carrito/routes.py:350
+msgid "Importe"
+msgstr ""
+
+#: carrito/routes.py:351
+msgid "Total"
+msgstr ""
+
+#: carrito/routes.py:352
+msgid "Condiciones y formas de pago"
+msgstr ""
+
+#: carrito/routes.py:353
+msgid "El pago se debe realizar en el momento de entrega del producto"
+msgstr ""
+
+#: carrito/routes.py:354
+msgid "Banco Davivienda"
+msgstr ""
+
+#: carrito/routes.py:355
+msgid "Pago contraentrega"
+msgstr ""
+
+#: carrito/routes.py:356
+msgid "ACEPTAR"
+msgstr ""
+
+#: catalogo/routes.py:107
+msgid "DATE EL GUSTO DE PROBAR EL DELICIOSO SAZON EN PARRILLA DEL SUR"
+msgstr ""
+
+#: catalogo/routes.py:108
+msgid "NUESTROS PRODUCTOS"
+msgstr ""
+
+#: descripcion/routes.py:84
+msgid "Producto"
+msgstr ""
+
+#: descripcion/routes.py:85
+msgid "DESCRIPCIÓN DE NUESTROS PRODUCTOS"
+msgstr ""
+
+#: descripcion/routes.py:87
+msgid ""
+"POLLO BROASTER:  El pollo estilo broaster, es un pollo frito muy sabroso "
+"y crujiente que últimamente se viene sirviendo en muchos restaurantes de "
+"comida rápida (Tipo KFC) e incluso algunas versiones gourmet en "
+"restaurantes importantes. La mayoría de estos, se especializan en "
+"preparar este estilo de pollo rebozado con sabores tradicionales"
+msgstr ""
+
+#: descripcion/routes.py:88
+msgid ""
+"HAMBURGUESA: Sándwich hecho a base de carne molida o de origen vegetal, "
+"aglutinada en forma de filete cocinado a la parrilla o a la plancha, "
+"aunque también puede freírse u hornearse"
+msgstr ""
+
+#: descripcion/routes.py:89
+msgid ""
+"PAPA MIXTA: Deliciosa papa asada acompañada de pastor, arrachera, crema, "
+"mantequilla, queso blanco y queso amarillo. Le puedes añadir unos "
+"deliciosos nachos"
+msgstr ""
+
+#: descripcion/routes.py:90
+msgid ""
+"PERRO CALIENTE: El perrito caliente, también llamado completo, pancho, "
+"jocho, shuco o pan con perro, es un alimento en forma de bocadillo que se"
+" genera con la combinación de una salchicha"
+msgstr ""
+
+#: descripcion/routes.py:91
+msgid ""
+"PIZZA: La pizza es una preparación culinaria que consiste en un pan "
+"plano, habitualmente de forma circular, elaborado con harina de trigo, "
+"levadura, agua y sal (a veces aceite de oliva) que tradicionalmente se "
+"cubre con salsa de tomate y mozzarella y se hornea a alta temperatura en "
+"un horno de leña"
+msgstr ""
+
+#: descripcion/routes.py:92
+msgid ""
+"SANDWICH CUBANO: También llamado “Cuban Pressed Sandwich”, es un "
+"sanguchito que en su formato original lleva: jamón tipo lacón cocido, "
+"carne de cerdo, queso laminado, pepinillos en salmuera (que le dan el "
+"toque crunchy y fresquito), mayonesa y también le suelen añadir mostaza "
+"picante"
+msgstr ""
+
+#: descripcion/routes.py:93
+msgid ""
+"CARNE: Carne es todo alimento que sale de las partes blandas que se comen"
+" de un animal. En nuestro medio se suele comer carne de vacuno (vaca, "
+"ternera y añojo o ternera de un año), cerdo, cordero, cordero lechal, "
+"cabrito, conejo, aves de corral (pollo, pavo), etc, tiene diversas formas"
+" de preparación"
+msgstr ""
+
+#: descripcion/routes.py:94
+msgid ""
+"FILETE DE POLLO: El filete es una presa muy versatil, viene sin piel y "
+"sin hueso, porcionado, listo para adobar y preparar. Es un producto "
+"naturalmente alto en proteína, ideal para una dieta balanceada"
+msgstr ""
+
+#: descripcion/routes.py:95
+msgid ""
+"PAPA RELLENA: La papa rellena es una fritura típica de varios países "
+"latinoamericanos como Chile, Colombia, Cuba, Perú y Puerto Rico. Consiste"
+" en una masa frita de papa cocida, rellena de carne de vacuno, pollo, "
+"queso, cebollas, aceitunas, huevos duros, entre otros ingredientes "
+"picados"
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/_termui_impl.py:496
+msgid "{editor}: Editing failed"
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/_termui_impl.py:500
+msgid "{editor}: Editing failed: {e}"
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/core.py:1097
+msgid "Aborted!"
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/core.py:1282
+#: ev-flask/Lib/site-packages/click/decorators.py:495
+msgid "Show this message and exit."
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/core.py:1313
+#: ev-flask/Lib/site-packages/click/core.py:1339
+msgid "(Deprecated) {text}"
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/core.py:1357
+msgid "Options"
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/core.py:1385
+msgid "Got unexpected extra argument ({args})"
+msgid_plural "Got unexpected extra arguments ({args})"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ev-flask/Lib/site-packages/click/core.py:1398
+msgid "DeprecationWarning: The command {name!r} is deprecated."
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/core.py:1605
+msgid "Commands"
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/core.py:1637
+msgid "Missing command."
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/core.py:1715
+msgid "No such command {name!r}."
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/core.py:2271
+msgid "Value must be an iterable."
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/core.py:2293
+msgid "Takes {nargs} values but 1 was given."
+msgid_plural "Takes {nargs} values but {len} were given."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ev-flask/Lib/site-packages/click/core.py:2734
+msgid "env var: {var}"
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/core.py:2764
+msgid "(dynamic)"
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/core.py:2777
+msgid "default: {default}"
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/core.py:2790
+msgid "required"
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/decorators.py:400
+#, python-format
+msgid "%(prog)s, version %(version)s"
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/decorators.py:464
+msgid "Show the version and exit."
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/exceptions.py:43
+#: ev-flask/Lib/site-packages/click/exceptions.py:79
+msgid "Error: {message}"
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/exceptions.py:71
+msgid "Try '{command} {option}' for help."
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/exceptions.py:120
+msgid "Invalid value: {message}"
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/exceptions.py:122
+msgid "Invalid value for {param_hint}: {message}"
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/exceptions.py:178
+msgid "Missing argument"
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/exceptions.py:180
+msgid "Missing option"
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/exceptions.py:182
+msgid "Missing parameter"
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/exceptions.py:184
+msgid "Missing {param_type}"
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/exceptions.py:191
+msgid "Missing parameter: {param_name}"
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/exceptions.py:211
+msgid "No such option: {name}"
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/exceptions.py:225
+msgid "Did you mean {possibility}?"
+msgid_plural "(Possible options: {possibilities})"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ev-flask/Lib/site-packages/click/exceptions.py:261
+msgid "unknown error"
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/exceptions.py:268
+msgid "Could not open file {filename!r}: {message}"
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/parser.py:231
+msgid "Argument {name!r} takes {nargs} values."
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/parser.py:413
+msgid "Option {name!r} does not take a value."
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/parser.py:473
+msgid "Option {name!r} requires an argument."
+msgid_plural "Option {name!r} requires {nargs} arguments."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ev-flask/Lib/site-packages/click/shell_completion.py:315
+msgid "Shell completion is not supported for Bash versions older than 4.4."
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/shell_completion.py:322
+msgid "Couldn't detect Bash version, shell completion is not supported."
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/termui.py:160
+msgid "Repeat for confirmation"
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/termui.py:176
+msgid "Error: The value you entered was invalid."
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/termui.py:178
+msgid "Error: {e.message}"
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/termui.py:189
+msgid "Error: The two entered values do not match."
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/termui.py:245
+msgid "Error: invalid input"
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/termui.py:776
+msgid "Press any key to continue..."
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/types.py:265
+msgid ""
+"Choose from:\n"
+"\t{choices}"
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/types.py:299
+msgid "{value!r} is not {choice}."
+msgid_plural "{value!r} is not one of {choices}."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ev-flask/Lib/site-packages/click/types.py:389
+msgid "{value!r} does not match the format {format}."
+msgid_plural "{value!r} does not match the formats {formats}."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ev-flask/Lib/site-packages/click/types.py:409
+msgid "{value!r} is not a valid {number_type}."
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/types.py:465
+msgid "{value} is not in the range {range}."
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/types.py:606
+msgid "{value!r} is not a valid boolean."
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/types.py:630
+msgid "{value!r} is not a valid UUID."
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/types.py:811
+msgid "file"
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/types.py:813
+msgid "directory"
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/types.py:815
+msgid "path"
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/types.py:861
+msgid "{name} {filename!r} does not exist."
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/types.py:870
+msgid "{name} {filename!r} is a file."
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/types.py:878
+msgid "{name} '{filename}' is a directory."
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/types.py:887
+msgid "{name} {filename!r} is not readable."
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/types.py:896
+msgid "{name} {filename!r} is not writable."
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/types.py:905
+msgid "{name} {filename!r} is not executable."
+msgstr ""
+
+#: ev-flask/Lib/site-packages/click/types.py:971
+msgid "{len_type} values are required, but {len_value} was given."
+msgid_plural "{len_type} values are required, but {len_value} were given."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ofertas/routes.py:103
+msgid "DESCRIPCIÓN PROMOCIÓN"
+msgstr ""
+
+#: ofertas/routes.py:114
+msgid "Archivos"
+msgstr ""
+

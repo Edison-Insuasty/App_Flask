@@ -1,0 +1,39 @@
+{% extends 'public/layout.html' %} {% block title %} {{ results16['registrar1'] }} {% endblock %} {% block body %}
+
+
+<section>
+    <h2>
+        <a href="/admin" class="left" title="Volver"><i class="bi bi-arrow-left-circle"></i></a> {{ results16['detalles1'] }} <br> {{ results16['detalles2'] }}
+        <hr>
+    </h2>
+
+    {% if (infoCarro) %}
+
+    <div class="card" style="width: 25rem;">
+        {% set urlCarro = '/static/img/' %} {% if(infoCarro.imagen) %}
+        <img src="{{ urlCarro }}{{ infoCarro.imagen }}" class="card-img-top" alt="coche"> {% else %}
+        <img src="{{ urlCarro }}error.jpg" class="card-img-top sin_foto" alt="coche"> {% endif %}
+
+        <div class="card-body">
+            <h5 class="card-title"> <strong>{{ infoCarro.nompro }}</strong></h5>
+        </div>
+
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">ID: <strong>{{ infoCarro.idpro }}</strong></li>
+            <li class="list-group-item">{{ results16['nombre1'] }}: <strong>{{ infoCarro.nompro }}</strong></li>
+            <li class="list-group-item">{{ results16['descripcion1'] }}: <strong>{{ infoCarro.descripcion }}</strong></li>
+            <li class="list-group-item">{{ results16['foto'] }}: <strong>{{ infoCarro.imagen }}</strong></li>
+            <li class="list-group-item">{{ results16['precio2'] }}: <strong>{{ infoCarro.precio }}</strong></li>
+
+        </ul>
+    </div>
+
+    {% else %}
+    <div class="col-12">
+        <h2 class="text-center">
+            {{ results16['no'] }}
+        </h2>
+    </div>
+    {% endif %}
+</section>
+{% endblock %}

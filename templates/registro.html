@@ -1,0 +1,58 @@
+{% extends './base_login.html' %} {% block title%} {{ results4['registro'] }} {% endblock %} {% block body %}
+<br>
+
+<div class="container bg-light text-center">
+    <form class="row g-3" action="/registro" method="POST">
+        <div class="col-md-6">
+            <label for="validationDefault01" class="form-label">{{ results4['cedula1'] }}</label>
+            <input name="cedula" type="number" class="form-control" id="validationDefault01" value="Mark" required>
+        </div>
+        <div class="col-md-6">
+            <label for="validationDefault02" class="form-label">{{ results4['nombres'] }}</label>
+            <input name="nombres" type="text" class="form-control" id="validationDefault02" required>
+        </div>
+        <div class="col-md-6">
+            <label for="validationDefault03" class="form-label">{{ results4['apellidos'] }}</label>
+            <input name="apellidos" type="text" class="form-control" id="validationDefault03" required>
+        </div>
+        <div class="col-md-6">
+            <label for="validationDefaultUsername" class="form-label">{{ results4['correo'] }}</label>
+            <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                <input name="correo" type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="validationDefault04" class="form-label">{{ results4['direccion1'] }}</label>
+            <input name="direccion" type="text" class="form-control" id="validationDefault04" required>
+        </div>
+        <div class="col-md-6">
+            <label for="validationDefault05" class="form-label">{{ results4['telefono'] }}</label>
+            <input name="telefono" type="number" class="form-control" id="validationDefault05" required>
+        </div>
+        <div class="col-md-6">
+            <label for="validationDefault06" class="form-label">{{ results4['contraseña'] }}</label>
+            <input name="password" type="password" class="form-control" id="validationDefault06" required>
+        </div>
+        <div class="col-md-6">
+            <label for="validationDefault07" class="form-label">{{ results4['contraseña1'] }}</label>
+            <input name="repite_password" type="password" class="form-control" id="validationDefault07" required>
+        </div>
+        <div class="col-md-12">
+            <label for="validationDefault08" class="form-label">{{ results4['credencial'] }}</label>
+            <input name="credencial" type="text" class="form-control" id="validationDefault07" value="___" required>
+        </div>
+        <div class="col-12">
+            <br>
+            <button class="btn btn-primary" type="submit">{{ results4['registrar'] }}</button>
+        </div>
+        <div class="col-12 text-lg-left">
+            <br>
+            <a href="{{ url_for('principal') }}">
+                {{ results4['volver'] }}
+            </a>
+        </div>
+    </form>
+</div>
+
+{% endblock %}

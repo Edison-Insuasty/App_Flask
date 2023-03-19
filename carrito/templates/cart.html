@@ -1,0 +1,103 @@
+{% extends './base.html' %} {% block title%} {{ results14['carrito'] }} {% endblock %} {% block body %}
+
+<link rel="stylesheet" href={{url_for( 'static', filename='css/cart.css' )}} />
+<link rel="stylesheet" href={{url_for( 'static', filename='css/topStyle.css' ) }} />
+<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+<style>
+    /* Keyword value/name of color */
+    
+    .div-1 {
+        background-color: rgba(130, 206, 213, 0.444);
+    }
+    /* Hexadecimal value */
+    
+    .div-2 {
+        background-color: #8ec4d1;
+    }
+    /* RGB value */
+    
+    .div-3 {
+        background-color: rgb(118, 217, 228);
+    }
+</style>
+
+<br><br><br>
+
+<body>
+    <div class="container text-center">
+        <div class="div-2">
+            <div id="cartItems">
+                <br>
+                <h2 style="color:#000000" ;>{{ results14['carrito1'] }}</h2>
+                <br>
+                <div class="col-12">
+                    <img src="/static/img/logo1.png" />
+                </div>
+
+                <div id="tableItems">
+                    <table class="table text-center " style="color:#000000" ;>
+                        <thead>
+                            <tr>
+
+                                <th scope="col">{{ results14['imagen'] }}</th>
+                                <th scope="col">{{ results14['cantidad1'] }}</th>
+                                <th scope="col">{{ results14['valor'] }}</th>
+                                <th scope="col">{{ results14['valor1'] }}</th>
+
+                            </tr>
+                        </thead>
+                        {% for row in productos %}
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div id="itemImage">
+                                        <img src={{url_for( 'static', filename='img/' +row[3])}} id="image" /> {{row[1]}}
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div id="itemName">
+
+                                        <br> {% if row[4] == 1%}
+                                        <a href="/eliminaFromCart?productId={{row[0]}}">{{ results14['descartar'] }}</a> {% else %}
+                                        <a href="/removeFromCart?productId={{row[0]}}">-</a> {% endif %}
+                                        
+                                        {{row[4]}}
+                                        <a href="/aumentaFromCart?productId={{row[0]}}">+</a>
+                                        
+                                    </div>
+                                </td>
+                                <td>
+
+                                    <div id="itemPrice">
+                                        <br>${{row[2]}}
+                                    </div>
+                                </td>
+                                
+                                <td>
+                                    <div>
+                                        <div id="itemPrice2">
+                                            <br> ${{row[5]}}
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                        {% endfor %}
+                    </table>
+                    <hr id="seperator">
+                    <div id="total" style="color:#000000" ;>
+                        <span id="subtotal" ;>{{ results14['subtotal'] }}</span> : ${{totalPrice}}
+                    </div>
+                </div>
+            </div>
+            <a href="/checkout" class="btn btn-primary" role="button" data-bs-toggle="button">{{ results14['pagar'] }}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/elimina2" class="btn btn-danger" role="button" data-bs-toggle="button">{{ results14['vaciar'] }}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/menu" class="btn btn-dark" role="button" data-bs-toggle="button">{{ results14['seguir'] }}</a>
+            <br><br><br>
+        </div>
+    </div>
+</body>
+
+{% endblock %}

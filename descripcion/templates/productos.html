@@ -1,0 +1,56 @@
+{% extends './base.html' %} {% block title%} {{ results10['productos'] }} {% endblock %} {% block body %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+
+<div class="container">
+    <div class="card text-bg-primary mb-3 text-center" style="max-width: 70rem;">
+        <div class="card-header"><b><i>{{ results10['descripcion4'] }}</i></b></div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h1></h1>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>{{ results10['productos'] }}</th>
+                                    <th>{{ results10['nombre'] }}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-justify"><i>{{ results10['producto1'] }}</i></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-justify"><i>{{ results10['producto2'] }}</i></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-justify"><i>{{ results10['producto3'] }}</i></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-justify"><i>{{ results10['producto4'] }}</i></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-justify"><i>{{ results10['producto5'] }}</i></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-justify"><i>{{ results10['producto6'] }}</i></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-justify"><i>{{ results10['producto7'] }}</i></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-justify"><i>{{ results10['producto8'] }}</i></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-justify"><i>{{ results10['producto9'] }}</i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

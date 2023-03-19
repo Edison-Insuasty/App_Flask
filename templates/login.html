@@ -1,0 +1,27 @@
+{% extends './base_login.html' %} {% block title%} login {% endblock %} {% block body %}
+<br>
+<div class="container bg-light text-center">
+    <form class="row g-3" action="/sesion" method="POST">
+        <div class="col-md-6">
+            <label for="validationDefault01" class="form-label">{{ results3['cedula1'] }}</label>
+            <input name="cedula" type="number" class="form-control" id="validationDefault01" required>
+        </div>
+        <div class="col-md-6">
+            <label for="validationDefault02" class="form-label">{{ results3['contraseña'] }}</label>
+            <input name="password" type="password" class="form-control" id="validationDefault02" required>
+        </div>
+        <div class="col-12">
+            <br>
+            <button class="btn btn-primary" type="submit">{{ results3['iniciar'] }}</button>
+        </div>
+        <div class="col-12 text-lg-left">
+            <br>
+            <a href="{{ url_for('reg') }}">
+                {{ results3['registrar'] }}
+            </a>
+        </div>
+    </form>
+
+</div>
+
+{% endblock %}

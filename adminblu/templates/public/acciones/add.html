@@ -1,0 +1,45 @@
+{% extends 'public/layout.html' %} {% block title %} {{ results19['registrar1'] }} {% endblock %} {% block body %}
+
+
+<section>
+    <h2>
+        <a href="/admin" class="left" title="Volver"><i class="bi bi-arrow-left-circle"></i></a> {{ results19['registrar2'] }}
+        <hr>
+    </h2>
+
+    <form action="{{ url_for('adminblu.formAddCarro') }}" method="POST" class="mb-3" autocomplete="off" enctype="multipart/form-data">
+        <div class="row">
+            <div class="col">
+                <label for="id">ID</label>
+                <input type="number" name="idpro" class="form-control" required>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="marca">{{ results19['nombre'] }}</label>
+                <input type="text" name="nompro" class="form-control" required>
+            </div>
+            <div class="col">
+                <label for="modelo">{{ results19['descripcion2'] }}</label>
+                <input type="text" name="descripcion" class="form-control" required>
+            </div>
+            <div class="col">
+                <label for="modelo">{{ results19['precio2'] }}</label>
+                <input type="text" name="precio" class="form-control" required>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col">
+                <label for="imagen">{{ results19['foto2'] }}</label>
+                <input type="file" name="imagen" class="form-control-file" accept="image/*" required>
+            </div>
+        </div>
+        <hr>
+
+        <input class="button-primary mt-3 btn btn-info btn-block bold" type="submit" value="{{ results19['guardar1'] }}">
+    </form>
+</section>
+
+{% endblock %}

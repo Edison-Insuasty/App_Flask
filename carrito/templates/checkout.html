@@ -1,0 +1,145 @@
+{% extends './base.html' %} {% block title%} {{ results13['pago'] }} {% endblock %} {% block body %}
+
+<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+
+<style>
+    /* Keyword value/name of color */
+    
+    .div-1 {
+        background-color: rgba(120, 188, 233, 0.922);
+    }
+    /* Hexadecimal value */
+    
+    .div-2 {
+        background-color: #FF0000;
+    }
+    /* RGB value */
+    
+    .div-3 {
+        background-color: rgb(255, 0, 0);
+    }
+</style>
+
+<br><br><br>
+
+<body>
+
+    <div class="container text-center">
+        <div class="div-1 text-center col-12">
+            <div class="row">
+                <div id="app" class="text-center">
+                    <br>
+                    <h4>{{ results13['factura'] }}</h4>
+                    <br>
+                    <div class="row my-3">
+                        <div class="col-12">
+                            <h1>{{ results13['parrilla1'] }}</h1>
+                            <p>{{ results13['carrera'] }} 6 N.1A-34 <br /> {{ results13['barrio'] }}</p>
+                        </div>
+                        <div class="col-12">
+                            <img src="/static/img/logo1.png" />
+                        </div>
+                    </div>
+                    <br>
+
+                    <hr />
+
+                    <div class="row fact-info mt-3">
+
+                        <div class="col-4">
+                            <h5>Enviar a</h5>
+                            <h5><label for="marca">{{ dataLogin.nombres }}</label>
+                                <label for="marca">{{ dataLogin.apellidos }}</label></h5>
+                            <h5><label for="marca">{{ dataLogin.correo }}</label></h5>
+                            <h5><label for="marca">{{ dataLogin.direccion }}</label></h5>
+                        </div>
+                        <div class="col-4">
+                            <h5>N. de factura</h5>
+                            <h5><label for="marca">{{ numero_aleatorio }}</label></h5>
+                            <h5>N. de telefono</h5>
+                            <h5><label for="marca">{{ dataLogin.telefono }}</label></h5>
+                        </div>
+                        <div class="col-4">
+                            <h5>Fecha</h5>
+                            <h5>
+                                <div class="col-md-12">
+                                    {{ result['us_date'] }}
+                                </div>
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="container text-center col-8">
+                        <div class="row my-5 text-center">
+
+                            <table class="table factura">
+
+                                <thead>
+                                    <tr>
+                                        <th>{{ results13['cantidad'] }}</th>
+                                        <th>{{ results13['descripcion2'] }}</th>
+                                        <th>{{ results13['precio1'] }}</th>
+                                        <th>{{ results13['importe'] }}</th>
+                                    </tr>
+                                </thead>
+                                {% for row in productos %}
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div id="itemPrice">
+                                                <br>{{row[4]}}
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div id="itemPrice">
+                                                <br>{{row[1]}}
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div id="itemPrice">
+                                                <br>${{row[2]}}
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div id="itemPrice">
+                                                <br>${{row[5]}}
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                {% endfor %}
+                                <tfoot>
+                                    <tr>
+                                        <th></th>
+                                        <th></th>
+                                        <th>{{ results13['total'] }}</th>
+                                        <th><label for="marca">$ {{ totalPrice }}</label></th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="cond row">
+                        <div class="col-12 mt-3">
+                            <h4>{{ results13['condiciones'] }}</h4>
+                            <p>{{ results13['pago1'] }}</p>
+                            <p>
+                                {{ results13['banco'] }}
+                                <br /> 5451 4568 1235 1456
+                                <br /> Nequi: 3136085656
+                                <br /> {{ results13['pago2'] }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="/cart" class="btn btn-primary" role="button" data-bs-toggle="button">{{ results13['aceptar'] }}</a>
+
+            <br><br>
+        </div>
+    </div>
+
+</body>
+
+{% endblock %}

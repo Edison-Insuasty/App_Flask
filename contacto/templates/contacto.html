@@ -1,0 +1,45 @@
+{% extends './base.html' %} {% block title%} {{ results11['contacto1'] }} {% endblock %} {% block body %}
+
+<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+<br>
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <div class="col">
+            <div class="card align-items-center" style="width: 28rem;">
+                <br><br>
+                <img src="static/img/edison.jpg" class="card-img-top" alt="..." style="width: 15rem; height: 25rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Edison Insuasty</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><b><i>{{ results11['correo'] }}:</i></b> edisonins32@gmail.com</li>
+                    <li class="list-group-item"><b><i>{{ results11['telefono'] }}:</i></b> 3175896545</li>
+                </ul>
+                <div class="card-body">
+                    <a href="https://es-la.facebook.com/" class="card-link"><img src="static/img/facebook.png" class="card-img-top" alt="..." style="width: 3rem; height: 3rem;"></a>
+                    <a href="https://www.instagram.com/" class="card-link"><img src="static/img/instagram.png" class="card-img-top" alt="..." style="width: 3rem; height: 3rem;"></a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card align-items-center" style="width: 28rem; ">
+                <br><br>
+                <img src="static/img/luis.jpeg" class="card-img-top" alt="..." style="width: 15rem; height: 25rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Luis Lopez</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><b><i>{{ results11['correo'] }}:</i></b> luislopez98@gmail.com</li>
+                    <li class="list-group-item"><b><i>{{ results11['telefono'] }}:</i></b> 3165584505</li>
+                </ul>
+                <div class="card-body">
+                    <a href="https://www.facebook.com/" class="card-link"><img src="static/img/facebook.png" class="card-img-top" alt="..." style="width: 3rem; height: 3rem;"></a>
+                    <a href="https://www.instagram.com/" class="card-link"><img src="static/img/instagram.png" class="card-img-top" alt="..." style="width: 3rem; height: 3rem;"></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<br> {% endblock %}

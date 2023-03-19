@@ -1,0 +1,50 @@
+{% extends './base.html' %} {% block title%} {{ results12[menu1] }} {% endblock %} {% block body %}
+
+<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+
+<main>
+    <div class="container">
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center" style="color: rgb(228, 228, 7)">
+            <h4 class="my-0 font-weight-bold">{{ results12[date] }}</h4>
+            <h1 class="my-0 font-weight-bold">{{ results12[nuestros] }}</h1>
+        </div>
+    </div>
+    
+    <section class="our-publication pt-100 pb-70">
+        <div class="container">
+            <div class="row">
+                {% with urlproducto = '/static/img/' %}{% for data in itemData %} {% for row in data %}
+                <div class="col-sm-6 col-lg-4">
+
+                    <div class="single-publication">
+                        <figure style="width:350px;">
+                            <div class="card-deck mb-3 text-center">
+                                <div class="card mb-4 shadow-sm" category="">
+                                    <div class="card-header">
+                                        <h4 class="my-0 font-weight-bold"> {{row[1]}}</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="/productDescription?idpro={{row[0]}}">
+                                            <img src={{ url_for( 'static', filename='img/' + row[3]) }} width="300" height="270" id="itemImage" />
+                                        </a>
+                                        <br><br>
+                                        <h1 class="card-title pricing-card-title precio">$ <span class="">{{ row[4] }}</span></h1>
+
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                {% endfor %}{% endfor %}{% endwith %}
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+{% endblock %}

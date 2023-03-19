@@ -1,0 +1,86 @@
+<!-- {{ miData }} -->
+{% if (miData) %}
+<div class="table-responsive">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+
+                <th scope="col">ID</th>
+                <th scope="col">{{ results18['nombre'] }}</th>
+                <th scope="col">{{ results18['descripcion2'] }}</th>
+                <th scope="col">{{ results18['foto1'] }}</th>
+                <th scope="col">{{ results18['precio'] }}</th>
+                <th>{{ results18['acciones'] }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for producto in miData %} {% with urlproducto = '/static/img/' %}
+            <tr idpro="Registro_{{ producto.idpro }}">
+
+                <th scope="row">{{ producto.idpro }}</th>
+                <td>{{ producto.nompro }}</td>
+                <td>{{ producto.descripcion }}</td>
+
+                <td>
+                    {% if(producto.imagen !="") %}
+                    <img src="{{ urlproducto }}{{ producto.imagen }}" class="sin_foto_mini" alt="{{ producto.nombre }}"> {% else %}
+                    <img src="{{ urlproducto }}1.jpeg" class="sin_foto_mini" alt="coche"> {% endif %}
+                </td>
+
+                <td>{{ producto.precio }}</td>
+
+
+                <td width="300">
+                    <span style="display: flex; justify-content:space-between;">
+                        <a href="{{ url_for('adminblu.viewDetalleCarro', idpro = producto.idpro ) }}" type="button"
+                            class="btn btn-warning btn-sm" tooltip="Ver Registro">
+                            <i class="bi bi-eye"></i>
+                            {{ results18['ver'] }}
+                        </a>
+
+                        <a href="{{ url_for('adminblu.formViewUpdate', idpro = producto.idpro ) }}" class="btn btn-info btn-sm"
+                            tooltip="Actualizar Registro">
+                            <i class="bi bi-arrow-clockwise"></i>
+                            {{ results18['actualizar1'] }}
+                        </a>
+
+                        <a href="/elimina?idpro={{producto.idpro}}" class="btn btn-danger btn-sm">{{ results18['descartar'] }}</a>
+  
+                    </span>
+                </td>
+
+            </tr>
+            {% endwith %} {% endfor %}
+        </tbody>
+    </table>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+
+            {% for pag in range(1,11) %}
+            <li class="page-item">
+                <a class="page-link" href="/page/{{pag}}">{{ pag }}</a>
+            </li>
+            {% endfor %}
+
+        </ul>
+    </nav>
+</div>
+{% else %}
+<div class="row mb-5">
+    <div class="col-md-12">
+        <h3 class="text-center">{{ results18['no1'] }}</h3>
+        <img class="img-fluid " src="../../static/img/panda.png" height="498" width="450">
+    </div>
+</div>
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+
+        {% for pag in range(1,11) %}
+        <li class="page-item">
+            <a class="page-link" href="/page/{{pag}}">{{ pag }}</a>
+        </li>
+        {% endfor %}
+
+    </ul>
+</nav>
+{% endif %}

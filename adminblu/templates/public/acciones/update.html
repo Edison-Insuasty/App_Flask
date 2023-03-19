@@ -1,0 +1,64 @@
+{% extends 'public/layout.html' %} {% block title %} {{ results17['registrar1'] }} {% endblock %} {% block body %}
+
+
+<section>
+    <h2>
+        <a href="/admin" class="left" title="Volver"><i class="bi bi-arrow-left-circle"></i></a> {{ results17['actualizar'] }}
+        <hr>
+    </h2>
+
+    {% if (dataInfo) %}
+    <form action="{{ url_for('adminblu.formActualizarCarro', idpro = dataInfo.idpro ) }}" method="POST" class="mb-3" autocomplete="off" enctype="multipart/form-data">
+        <input type="text" class="form-control" name="id" value="{{ dataInfo.idpro }}" required hidden>
+
+
+
+        <div class="row">
+            <div class="col">
+                <label for="marca">{{ results17['nombre'] }}</label>
+                <input type="text" name="nompro" value="{{ dataInfo.nompro }}" class="form-control">
+            </div>
+            <div class="col">
+                <label for="modelo">{{ results17['descripcion2'] }}</label>
+                <input type="text" name="descripcion" value="{{ dataInfo.descripcion }}" class="form-control">
+            </div>
+            <div class="col">
+                <label for="modelo">ID</label>
+                <input type="text" name="idpro" value="{{ dataInfo.idpro }}" class="form-control">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label for="marca">{{ results17['precio'] }}</label>
+                <input type="text" name="precio" value="{{ dataInfo.precio }}" class="form-control">
+            </div>
+        </div>
+
+        <div class="row">
+            {% set urlCarro = '/static/img/' %}
+            <div class="col-md-6">
+                {% if(dataInfo.imagen !="") %}
+                <img src="{{ urlCarro }}{{ dataInfo.imagen}}" class="foto_update" alt="{{ dataInfo.nombre }}"> {% else %}
+                <img src="{{ urlCarro }}error.jpg" class="imagen_update" alt="coche"> {% endif %}
+            </div>
+            <div class="col-md-6">
+                <label for="imagen">{{ results17['cambiar'] }}</label>
+                <input type="file" name="imagen" class="form-control-file" accept="image/*">
+            </div>
+        </div>
+        <hr>
+        <input class="button-primary mt-3 btn btn-info btn-block bold" type="submit" value="{{ results17['guardar'] }}">
+    </form>
+
+    {% else %}
+    <div class="col-12">
+        <h2 class="text-center">
+            {{ results17['noo'] }}
+        </h2>
+    </div>
+    {% endif %}
+
+</section>
+
+{% endblock %}

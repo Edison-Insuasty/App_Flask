@@ -1,0 +1,53 @@
+ {% extends './base.html' %} {% block title%} {{ results9['archivos'] }} {% endblock %} {% block body %}
+
+<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+
+<div class="container">
+    <div class="card text-bg-primary mb-3 text-center bg-transparent" style="max-width: 100rem;">
+        <div class="card-header" style="color: rgb(228, 228, 7)">
+            <h1>{{ results9['promociones'] }}</h1>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h1></h1>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% with urlpromo = '/static/img/' %}{% for data in itemData1 %} {% for row in data %}
+                                <div class="container">
+
+                                    <div class="card-deck mb-3 text-center">
+                                        <div class="card mb-3 shadow-sm" category="">
+                                            <div class="card-header">
+
+                                                <h4 class="my-0 font-weight-bold"> {{row[1] }}</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="/productDescription?idpro={{row[0]}}">
+                                                    <img src={{ url_for( 'static', filename='img/' + row[3]) }} width="600" height="470" id="itemImage" />
+                                                </a>
+                                                <h1 class="card-title pricing-card-title precio">$ <span class="">{{ row[4] }}</span></h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}{% endfor %}{% endwith %}
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+{% endblock %}
