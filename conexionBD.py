@@ -7,7 +7,7 @@ def connectionBD():
             host ="localhost",
             user ="root",
             password ="",
-            db = "parrillaipi1"
+            db = "bd_parrilla"
             )
     except Exception:
         abort(500)
